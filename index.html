@@ -1,22 +1,410 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto Portifolio landscape</title>
+  <title>Portfolio | Leonardo Da Vinci  </title>
+  <meta name="description" content="Portfólio do desenvolvedor Fullstack Leonardo Braga o profissional de design de som Leonardo da Vinci.">
+
+  <link rel="shortcut icon" href="assets/img/favicon-vaduz.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
 </head>
 <body>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="assets/img/logo-lv.png" alt="Logo LV">
+      </a>
+    </div>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-  <header></header>
-
-  <main>
-    
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Soluções Criativas &</b> Desenvolvimento de Som</h1>
+      <p>Leonardo Da Vinci Sales de Souza, Rio de Janeiro-RJ, Sonoplasta.</p> 
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="mailto:leo12.leonardo@gmail.com" target="_blank">
+            <i class="menu__icon bi bi-mailbox2"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="" target="_blank">
+            <i class="menu__icon bi bi-whatsapp"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.youtube.com/@NaturesHarmonyChannel-q9o" target="_blank">
+            <i class="menu__icon bi bi-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.instagram.com/leodavinci85/" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>  
+      </a>
+    </div>
+    <div class="main__content2">
+      <!-- <img class="main__photo" src="assets/img/Avatar.jpeg" alt=""> -->      
+    </div>
   </main>
 
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
+  <section class="technologies">
+    <h2>Conhecimento e experiência nas principais áreas do mercado audiovisual</h2>
+    <div class="technologies__img">      
+          <img class="technologies__logo" src="assets/img/areas/Logo tec design sonoro.png" alt="Logo Angular">
+    </div>
+      
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Capa Josi's Box">
+        <div class="card__body">
+          <h3 class="card__title">Josi’s Box Ecommerce</h3>
+          <p class="card__description">Ecommerce de Livros</p>
+          <ul class="card__list">
+            <li class="card__item">Listagem de favoritos;</li>
+            <li class="card__item">Carrinho de compras;</li>
+            <li class="card__item">Filtragem por preço e categoria.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn">
+              <span>Repositório</span>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Capa Archstil">
+        <div class="card__body">
+          <h3 class="card__title">Archstil Blog</h3>
+          <p class="card__description">A história por trás dos Estilos Arquitetônicos.</p>
+          <ul class="card__list">
+            <li class="card__item">Postagens relacionadas e em destaque;</li>
+            <li class="card__item">Filtragem por tags e categorias;</li>
+            <li class="card__item">Biografia do autor.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn">
+              <span>Repositório</span>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img class="card__cover" src="assets/images/projects/games-store.jpg" alt="Capa Games Store">
+        <div class="card__body">
+          <h3 class="card__title">Games Store</h3>
+          <p class="card__description">Loja online de Games.</p>
+          <ul class="card__list">
+            <li class="card__item">Listagem de favoritos;</li>
+            <li class="card__item">Carrinho de compras;</li>
+            <li class="card__item">Filtragem por preço e categoria.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <button class="btn btn--primary">
+              <span>Prévia</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>  
+            <button class="btn">
+              <span>Repositório</span>
+            </button>  
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/elidianaandrade">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>  
+      </a>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/img/Avatar.jpeg" alt="">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+
+        <p>Olá, meu nome é <strong>Leonardo da Vinci Sales de Souza</strong>.</p>
+
+        <p>Minha trajetória no audiovisual começou muito cedo — aos 15 anos, dentro da TV Globo. Iniciei como office boy e comprador, mas foi ali, nos corredores dos estúdios e ilhas de edição, que descobri meu verdadeiro chamado: o som.</p>
+
+        <p>Ao longo dessa trajetória, construí minha formação técnica passando por todas as etapas do fluxo de produção audiovisual. Comecei como <strong>operador de VT e áudio</strong>, atuando nos processos de gravação, exibição e sincronização de imagens e som, e depois evoluí para o trabalho de <strong>artista de folley</strong>, onde aprofundei o domínio da relação entre movimento, som e narrativa.</p>
+
+        <p>Na edição de áudio, desenvolvi uma percepção refinada sobre qualidade sonora, ritmo e impacto emocional no audiovisual. Esse caminho me levou naturalmente à <strong>sonoplastia e ao sound design</strong>, e, com o tempo, essa paixão se consolidou em uma atuação madura e precisa, resultando em uma abordagem de <strong>sonoplasta sênior</strong>, focada não apenas na técnica, mas na narrativa e na intenção artística de cada projeto.</p>
+
+        <p>Tive o privilégio de trabalhar em alguns dos maiores programas da televisão brasileira, participando da criação sonora de produções icônicas como <strong>Fausto Silva</strong>, <strong>Xuxa</strong> e <strong>Caldeirão do Huck</strong>, além de integrar projetos de dramaturgia que marcaram gerações, como <strong>TV Pirata</strong>, <strong>Armação Ilimitada</strong>, <strong>A Grande Família</strong> e <strong>Toma Lá, Dá Cá</strong>.</p>
+
+        <p>Cada projeto foi uma oportunidade de construir universos sonoros que ampliam a experiência do público — seja no humor, no drama ou no entretenimento. Meu trabalho é dar vida ao que não se vê, criando atmosferas, texturas e emoções que fazem cada história soar única.</p>
+        
+        <!-- <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>Inglês: Intermediário | Espanhol: Básico</span>
+        </div> -->
+        
+        <!-- <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/leonardo-braga-526397156" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button> 
+          </a>
+          <a href="">
+            <button class="btn">
+              <span>Currículo</span>
+            </button>
+          </a>
+        </div> -->
+      </div>
+    </div>
+    <!-- <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Engenharia Elétrica</h4>
+          <span> Ago 2016 - Abr 2024</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>Universidade Federal do Rio de Janeiro</span>
+          </div>
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Ensino Profissionalizante</span>
+          </div>
+        </div>
+        <div class="row2">
+          <h3>Formação</h3>
+          <h4>Desenvolvedor FullStack</h4>
+          <span>Ago 2024 - Atualmente</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>Faculdade de Informática e Administração Paulista</span>
+          </div>
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <span>Pós-graduação TECH - Especialização</span> 
+          </div>         
+        </div>
+      </div>
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Formação a partir do zero: HTML e CSS para projetos web</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Alura. Ago 2024. 53h.
+              </p>
+              <p>
+                Ferramentas de desenvolvimento de layouts (ex: Figma) e publicação (ex: Github).</p>
+
+              <p>Estruturar uma página web com tags HTML.</p>
+
+              <p>Compreender como HTML e CSS trabalham juntos.</p>
+
+              <p>Descobrir como organizar o conteúdo com arquivos HTML.</p>
+
+              <p>Organizar uma página com CSS Flexbox.</p>
+
+              <p>Criar cabeçalhos, rodapés e aplicar estilos com CSS.</p>
+
+              <p>Tornar seu site responsivo para diferentes tamanhos de tela.</p>               
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Formação a partir do zero: iniciante em programação</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Alura. Set 2024. 31h.
+              </p>
+              <p>
+                Aprender lógica de programação junto com as linguagens de programação mais utilizadas no mundo. Aprender lógica de programação é fundamental para o desenvolvimento de software porque fornece as bases para se criar, analisar e resolver problemas computacionais de forma estruturada e eficiente.
+              </p>
+              <p>
+                Aprender a manusear o GitHub, plataforma online de hospedagem e colaboração de projetos de desenvolvimento de software.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Formação: aprenda a programar em JavaScript com foco no back-end</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Alura. Out 2024. 74h.
+              </p>
+              <p>
+                Continuação da formação a partir do zero: iniciante em programação, com foco em back-end e JavaScript.
+              </p>
+            </div>
+          </div> 
+        </div>
+      </div> 
+    </div>-->      
+  </section>
   
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para serviços e novas conexões. Contate-me via 
+      e-mail e conecte-se comigo através das minhas redes sociais.
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="mailto:leo12.leonardo@gmail.com" target="_blank">
+          <i class="menu__icon bi bi-mailbox2"></i>
+          <span>Gmail</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.youtube.com/@NaturesHarmonyChannel-q9o" target="_blank">
+          <i class="menu__icon bi bi-youtube"></i>
+          <span>YouTube</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.instagram.com/leodavinci85/" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <a href="mailto:leo12.leonardo@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">leo12.leonardo@gmail.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2024. Portfólio desenvolvido por <a href="https://github.com/Vegildo" target="_blank">Leonardo Braga</a>.
+    </p>
+  </footer>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
