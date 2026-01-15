@@ -37,6 +37,10 @@ html[data-theme='light'] .technologies__logo {
   filter: invert(80%);
 }
 
+html[data-theme='dark'] .technologies__logo:hover {
+  filter: invert(80%);
+}
+
 * {
   margin: 0;
   padding: 0;
